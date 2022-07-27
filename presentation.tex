@@ -1,0 +1,85 @@
+\documentclass{beamer}
+\usepackage[utf8]{inputenc}
+
+\usetheme{Madrid}
+\usecolortheme{default}
+%--------------------------------------
+\usepackage[T2A]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[russian]{babel}
+%--------------------------------------
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor= blue,      
+    urlcolor= blue,
+    pdftitle={Overleaf Example},
+    pdfpagemode=FullScreen,
+    }
+\title[cats. cats. cats]
+{Inroducion to LaTex}
+
+\author[Kulikov]
+{A.~V.~Kulikov\inst{1}}
+
+\institute[HSE]
+{
+    \inst{1}
+    Faculty of Computer Science \\
+    Hse University
+}
+\date[27 07 2022] % (optional)
+{LaTeX Course, July 2022}
+
+\logo{\includegraphics[height=1cm]{images/logo.png}}
+\AtBeginSection[]
+
+\begin{document}
+\frame{\titlepage}
+
+\begin{frame}
+\frametitle{Table of Contents}
+\tableofcontents
+\end{frame}
+
+\section{Lorem Ipsum}
+
+\begin{frame}
+\frametitle{Lorem Ipsum}
+\begin{enumerate}
+\item First part
+\item Second part
+\item Third part
+\end{enumerate}
+\end{frame}
+\begin{frame}{First part}
+\begin{tabular}{c | c | c | c}
+    Random photo & first photo & second photo & third photo \\ \hline
+    \includegraphics[width=0.1\textwidth, height=15mm]{images/8.jpg} & \includegraphics[width=0.1\textwidth, height=15mm]{images/1.jpg} & \includegraphics[width=0.1\textwidth, height=15mm]{images/2.jpg} & \includegraphics[width=0.1\textwidth, height=15mm]{images/3.jpg} \\
+\end{tabular} \\
+    Curabitur porttitor nulla in erat viverra, posuere scelerisque massa venenatis.
+\end{frame}
+
+\begin{frame}{Second part}
+    \begin{tabular}{| r c | c |}
+	\multicolumn{1}{r}{} &  \multicolumn{1}{c}{left} & \multicolumn{1}{c}{right} \\ \hline
+	first img & \includegraphics[width=0.1\textwidth,height=15mm]{images/1.jpg} & \includegraphics[width=0.1\textwidth, height=15mm]{images/4.jpg} \\ \hline
+	second img & \includegraphics[width=0.1\textwidth,height=15mm]{images/2.jpg} & \includegraphics[width=0.1\textwidth, height=15mm]{images/5.jpg} \\ \hline
+	third img & \includegraphics[width=0.1\textwidth,height=15mm]{images/3.jpg} & \includegraphics[width=0.1\textwidth, height=15mm]{images/6.jpg} \\ \hline
+\end{tabular} \\
+    Sed pellentesque lorem eu ante consectetur tristique. Aliquam cursus eros pellentesque, fermentum massa rutrum, tempus augue.
+\end{frame}
+
+\section {Other part of useless text}
+    \begin{frame}{Ut vel congue augue}
+        Ut id pellentesque quam. Maecenas purus velit, convallis sed mattis sit amet, fermentum et ligula. Donec vestibulum justo laoreet risus vulputate pellentesque. Vivamus ac lacinia dui. Vestibulum dapibus sit amet nulla a dictum. Mauris pretium metus a accumsan mollis. \\
+        \includegraphics[width=0.4\textwidth, height=60mm]{images/6.jpg}
+    \end{frame}
+    
+    \begin{frame}{lacinia rhoncus purus}
+        Vivamus rutrum vehicula gravida. Integer sit amet sapien vel nunc interdum ullamcorper. Ut euismod tellus et felis ultrices, vel fringilla mi ultricies. Cras tortor ligula, convallis vestibulum laoreet vel, pharetra eu purus. \\
+        \includegraphics[width=0.4\textwidth, height=60mm]{images/7.jpg}
+    
+    \end{frame}
+\end{document}
